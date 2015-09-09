@@ -1,7 +1,7 @@
 {
-  "name": "caman",
+  "name": "caman-dist-only",
   "version": "4.1.2",
-  "description": "Javascript (Ca)nvas (Man)ipulation for NodeJS and the browser",
+  "description": "Javascript (Ca)nvas (Man)ipulation for NodeJS and the browser - dist folder only to avoid dependency issues when browser only is desired",
   "keywords": [
     "canvas",
     "image",
@@ -44,24 +44,7 @@
   "main": "./dist/caman.full.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/meltingice/CamanJS.git"
-  },
-  "dependencies": {
-    "canvas": "*",
-    "fibers": "*"
-  },
-  "devDependencies": {
-    "coffee-script": ">= 1.6.1",
-    "docco": "0.6.2",
-    "codo": "*",
-    "jsmin": "*",
-    "packer": "*",
-    "chai": "*",
-    "servedir": "*",
-    "cli": "*",
-    "cli-table": "*",
-    "karma": "~ 0.10",
-    "karma-mocha": "*"
+    "url": "http://github.com/arschmitz/camam-dist-only.git"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers coffee:coffee-script --reporter spec --globals Caman ./test/unit/*.coffee && ./node_modules/.bin/karma start --single-run --browsers Firefox",
